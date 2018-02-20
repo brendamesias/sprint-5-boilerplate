@@ -1,0 +1,53 @@
+/*header*/
+
+.header{
+  background: #80cbc4;
+}
+.input-field label{
+  color: white;
+}
+input:not([type]), input[type=text]:not(.browser-default), input[type=password]:not(.browser-default), input[type=email]:not(.browser-default), input[type=url]:not(.browser-default), input[type=time]:not(.browser-default), input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default), input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), textarea.materialize-textarea{
+  border-bottom-color: white;
+}
+h4{
+  color: #00695c;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+/*section topic en vista home */
+
+.topic{
+  padding-top: 1em;
+}
+
+/* modal */
+.modal{
+  background-color: #80cbc4;
+  width: 30em;
+}
+.modal .modal-footer{
+  background-color: #80cbc4;
+}
+.btn-flat{
+  color: white;
+  font-weight: bold;
+}
+
+/*section topic en vista ver topic respuestas */
+p {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 0px;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+.container-padding-left{
+  padding-left: 1.5em;
+}
+
+@media (max-width: 500px) {
+  .modal{
+    width: 90%;
+  }
+}

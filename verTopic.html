@@ -1,6 +1,5 @@
 <!-- Mostrar en este HTML las respuestas de cada topic -->
-
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -8,18 +7,143 @@
   </head>
   <body>
 
-    <h1>Aqui va el contenido de tema individual</h1>
+    <h1>Aqui va el contenido de tema individual</h1> -->
     <!-- Borar cuando se entienda como pasar info con topic id-->
-    <h1>Ingresa el topic id a este html usando la url.</h1>
+    <!-- <h1>Ingresa el topic id a este html usando la url.</h1>
     <a href='verTopic.html?topic_id=2'>Algo asi</a><br/>
-    <a href='verTopic.html?topic_id=1'>O asi</a>
+    <a href='verTopic.html?topic_id=1'>O asi</a> -->
     <!-- Borar cuando se entienda como pasar info con topic id-->
-    
-     <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
 
+     <!-- jQuery -->
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
 
     <script src="js/functions.js"></script>
     <script src="js/verTopic.js"></script>
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Answers</title>
+  </head>
+  <body>
+    <!-- header -->
+    <div class="row valign-wrapper header">
+      <div class="col s5 left-align">
+        <h4>Foro Cool</h4>
+      </div>
+      <div class="col s7 right-align">
+        <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Crear respuesta</a>
+      </div>
+    </div>
+    <!-- fin header -->
+
+    <!-- container all Answers -->
+    <div class="container-all-answers">
+      <div class="row valign-wrapper topic">
+        <div class="col s4 offset-s2 center-align container-topics">
+          <span id="topic">Tema 1 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</span>
+          <br>
+          <span>escrito por: </span>
+          <span id="name">Rosa</span>
+        </div>
+        <div class="col s5 left-align container-num-answers">
+          <span id="num-answers"> 3 respuestas</span>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="container-padding-left">
+        <div class="row">
+          <div class="col s12 left-align">
+            <h5>Respuestas</h5>
+          </div>
+        </div>
+        <div class="container-answers">
+          <div class="row">
+            <div class="col s12 left-align">
+              <p id="answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+              <span>escrito por</span>
+              <span id="name">Marcos</span>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <div class="row">
+            <div class="col s12 left-align">
+              <p id="answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+              <span>escrito por</span>
+              <span id="name">Marcos</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s12 left-align">
+              <p id="answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+              <span>escrito por</span>
+              <span id="name">Marcos</span>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <div class="row">
+            <div class="col s12 left-align">
+              <p id="answer">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</p>
+              <span>escrito por</span>
+              <span id="name">Marcos</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- fin container-alltopics -->
+
+
+    <!-- modal para all topics -->
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <div class="row">
+          <form class="col s12">
+            <div class="row">
+              <div class="input-field col s12">
+                <i class="material-icons prefix">account_circle</i>
+                <input id="icon_prefix" type="text" class="validate">
+                <label for="icon_prefix">Name</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <i class="material-icons prefix">mode_edit</i>
+                <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+                <label for="icon_prefix2">answer</label>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="row">
+          <div class="col s11 offset-s1">
+            <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+              <i class="material-icons right">send</i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">close</a>
+      </div>
+    </div>
+    <!-- fin modal all tipics -->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="js/verTopic.js"></script>
+    <script src="js/main.js"></script>
+
   </body>
 </html>
