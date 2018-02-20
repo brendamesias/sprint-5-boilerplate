@@ -9,4 +9,6 @@ function getParameterByName(name) {
   return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
 }
 
-XMLHttpRequest.open(get, 'https://examen-laboratoria-sprint-5.herokuapp.com/');
+$.ajax({
+  url: `https://api.github.com/users/${searchedUser}`
+});
