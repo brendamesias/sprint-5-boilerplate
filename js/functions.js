@@ -10,7 +10,7 @@
 // }
 $(document).ready(function() {
   // definiendo variables
-  var topicContent = $('.topic-content').html;
+  var topicContent = $('.topic-content').val;
   console.log(topicContent);
 
   $.ajax({
