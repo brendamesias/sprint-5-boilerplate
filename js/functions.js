@@ -24,7 +24,7 @@ $(document).ready(function() {
         }
       }
     })
-  // NO SE QUE ESTO
+
   $.ajax({
     url: 'https://examen-laboratoria-sprint-5.herokuapp.com/topics',
     type: 'GET',
