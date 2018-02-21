@@ -27,52 +27,16 @@
     <!-- fin header -->
 
     <!-- container-alltopics -->
-    <div class="container-alltopics">
-      <div class="row valign-wrapper topic">
-        <div class="col s4 offset-s2 center-align container-topics">
-            <span class="topic-content">Tema 1 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</span>
-            <br>
-            <span>escrito por: </span>
-            <span class="name">Maria</span>
-        </div>
-        <div class="col s5 left-align container-num-answers">
-          <span class="num-answers">5 respuestas</span>
-        </div>
-      </div>
-      <div class="divider"></div>
-      <div class="row valign-wrapper topic">
-        <div class="col s4 offset-s2 center-align container-topics">
-            <span class="topic-content">Tema 1 Lorem ipsum dolor sit amet, consectetur adipisicing elit</span>
-            <br>
-            <span>escrito por: </span>
-            <span class="name">Carlos</span>
-        </div>
-        <div class="col s5 left-align container-num-answers">
-          <span class="num-answers"> 7respuestas </span>
-        </div>
-      </div>
-      <div class="divider"></div>
-      <div class="row valign-wrapper topic">
-        <div class="col s4 offset-s2 center-align container-topics">
-            <span class="topic-content">Tema 1 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt</span>
-            <br>
-            <span>escrito por: </span>
-            <span class="name">Rosa</span>
-        </div>
-        <div class="col s5 left-align container-num-answers">
-          <span class="num-answers">3 respuestas</span>
-        </div>
-      </div>
-    </div>
+    <div id='items' class="container-alltopics"></div>
     <!-- fin container-alltopics -->
-
 
     <!-- modal para all topics -->
     <!-- Modal Structure -->
     <div id="modal1" class="modal">
       <div class="modal-content">
         <div class="row">
-          <form class="col s12">
+
+          <form id="enviarInfo" method="POST" class="col s12">
             <div class="row">
               <div class="input-field col s12">
                 <i class="material-icons prefix">account_circle</i>
@@ -87,15 +51,21 @@
                 <label for="icon_prefix2">Message</label>
               </div>
             </div>
+            <div class="row">
+              <div class="col s11 offset-s1">
+                <input type="submit" value='send'>
+              </div>
+            </div>
           </form>
+
         </div>
-        <div class="row">
+        <!-- <div class="row">
           <div class="col s11 offset-s1">
             <button class="btn waves-effect waves-light" type="submit" name="action">Submit
               <i class="material-icons right">send</i>
             </button>
           </div>
-        </div>
+        </div> -->
       </div>
       <div class="modal-footer">
         <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">close</a>
@@ -103,7 +73,7 @@
     </div>
     <!-- fin modal all tipics -->
 
-    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     <script src="js/functions.js"></script>
     <script src="js/main.js"></script>
