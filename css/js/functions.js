@@ -9,25 +9,10 @@
 //   return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
 // }
 $(document).ready(function() {
-  var datos;
 
-  console.log(datos)
-    var contenidoEncontrado,
-        palabraNueva;
-    $('#input_text').on('input', function(e) {
-      for(dato in datos) {
-        var dat = datos[dato];
-        if($('#input_text').val().length > 0 ) {
-          if($('#input_text').val().toLowerCase().includes(dat.content.toLowerCase())) {
-            console.log(dat)
-          }
-        }
-      }
-    })
-  // NO SE QUE ESTO
+
   $.ajax({
     url: 'https://examen-laboratoria-sprint-5.herokuapp.com/topics',
-    type: 'GET',
     ContentType: 'application/json',
     statusCode: {
       404: function() {
@@ -39,8 +24,7 @@ $(document).ready(function() {
     }
   })
     .done(function(data) {
-      datos = data.slice(0, 50);
-      for (var i = 0; i < 50; i++) {
+      for (var i = 0; i < 100; i++) {
         var creatingItem = `
           <div id='item' class="row valign-wrapper topic">
             <div class="col s4 offset-s2 center-align container-topics">
@@ -80,5 +64,5 @@ $(document).ready(function() {
       })
   })
 
-  
+
 });
